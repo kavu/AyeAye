@@ -19,7 +19,7 @@ func main() {
 		log.Fatalf("channel.open: %s", err)
 	}
 
-	queue, err := channel.QueueDeclare("info", true, false, false, false, nil)
+	queue, err := channel.QueueDeclare("logger.ayeaye", true, false, false, false, nil)
 	if err != nil {
 		log.Fatalf("queue.declare: %v", err)
 	}
